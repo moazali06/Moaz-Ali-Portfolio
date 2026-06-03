@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #0A192F;
+}
+
+/* Ensure body occupies full viewport correctly */
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0A192F;
+  overflow-x: hidden;
+}
