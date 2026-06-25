@@ -82,10 +82,10 @@
 import { ref } from 'vue'
 
 const currentYear = ref(2026)
-const emailAddress = ref('contact@techhyves.com')
+const emailAddress = ref('moaz55397@gmail.com')
 const githubUrl = ref('https://github.com')
-const linkedinUrl = ref('https://linkedin.com/in/moaz-ali')
-const resumeLink = ref('#')
+const linkedinUrl = ref('https://linkedin.com/in/moaz-ali10')
+const resumeLink = ref('Moaz Ali Resume.pdf')
 
 const navigationLinks = ref([
   { text: 'About', href: '#about' },
