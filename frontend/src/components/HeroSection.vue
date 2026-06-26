@@ -628,7 +628,7 @@
 
     <!-- BOTTOM CALL TO ACTION: VIEW ALL PROJECTS BUTTON -->
     <div class="mt-16 w-full flex justify-center">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center px-8 py-4 font-mono text-sm font-bold text-[#22D3EE] border border-[#22D3EE] rounded-xl overflow-hidden shadow-[0_0_20px_rgba(34,211,238,0.1)] hover:shadow-[0_0_35px_rgba(34,211,238,0.25)] transition-all duration-300">
+        <a href="https://github.com/moazali06" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center px-8 py-4 font-mono text-sm font-bold text-[#22D3EE] border border-[#22D3EE] rounded-xl overflow-hidden shadow-[0_0_20px_rgba(34,211,238,0.1)] hover:shadow-[0_0_35px_rgba(34,211,238,0.25)] transition-all duration-300">
             <span class="absolute inset-0 w-full h-full bg-[#22D3EE]/5 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             <span class="relative flex items-center gap-2">
                 View All Projects
