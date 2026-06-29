@@ -23,9 +23,21 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&^9%!m^f0!kx#w5gu$%ougth5kv*upyxtepu)s+y=gml1$2v^i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "moazali.com",
+    "www.moazali.com",
+    "127.0.0.1",
+    "localhost",
+]
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://moazali.com",
+    "https://www.moazali.com",
+]
+
 
 
 # Application definition
@@ -127,3 +139,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
