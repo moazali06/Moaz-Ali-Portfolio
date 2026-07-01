@@ -10,6 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Debug Secrets
+        run: |
+          if [ -z "${{ secrets.EC2_HOST }}" ]; then
+            echo "❌ EC2_HOST is EMPTY"
+          else
+            echo "✅ EC2_HOST exists"
+          fi
+
+          if [ -z "${{ secrets.USERNAME }}" ]; then
+            echo "❌ USERNAME is EMPTY"
+          else
+            echo "✅ USERNAME exists"
+          fi
+
+          if [ -z "${{ secrets.SSH_KEY }}" ]; then
+            echo "❌ SSH_KEY is EMPTY"
+          else
+            echo "✅ SSH_KEY exists"
+          fi
+
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v1.2.2
         with:
@@ -17,20 +37,31 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
+            set -e
+
             cd ~/Moaz-Ali-Portfolio
 
+            echo "Pulling latest code..."
             git pull origin main
 
+            echo "Activating virtual environment..."
             source venv/bin/activate
 
+            echo "Installing dependencies..."
             pip install -r backend/requirements.txt
 
             cd backend
 
+            echo "Running migrations..."
             python manage.py migrate --noinput
+
+            echo "Collecting static files..."
             python manage.py collectstatic --noinput
 
+            echo "Restarting Gunicorn..."
             sudo systemctl restart gunicorn
+
+            echo "Restarting Nginx..."
             sudo systemctl restart nginx
 
             echo "Deployment completed successfully!"
