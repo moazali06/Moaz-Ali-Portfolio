@@ -13,35 +13,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Debug Secrets
-        env:
-          EC2_HOST: ${{ secrets.EC2_HOST }}
-          USERNAME: ${{ secrets.USERNAME }}
-          SSH_KEY: ${{ secrets.SSH_KEY }}
-        run: |
-          echo "===== DEBUGGING SECRETS ====="
-
-          if [ -z "$EC2_HOST" ]; then
-            echo "❌ EC2_HOST is EMPTY"
-            exit 1
-          else
-            echo "✅ EC2_HOST exists"
-          fi
-
-          if [ -z "$USERNAME" ]; then
-            echo "❌ USERNAME is EMPTY"
-            exit 1
-          else
-            echo "✅ USERNAME exists"
-          fi
-
-          if [ -z "$SSH_KEY" ]; then
-            echo "❌ SSH_KEY is EMPTY"
-            exit 1
-          else
-            echo "✅ SSH_KEY exists"
-          fi
-
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v1.2.2
         with:
@@ -51,29 +22,67 @@ jobs:
           script: |
             set -e
 
+            echo "========== DEPLOY START =========="
+
             cd ~/Moaz-Ali-Portfolio
 
             echo "Pulling latest code..."
             git pull origin main
 
-            echo "Activating virtual environment..."
+            ####################################################
+            # FRONTEND
+            ####################################################
+
+            echo "Building Vue Frontend..."
+
+            cd frontend
+
+            npm install
+
+            npm run build
+
+            echo "Deploying frontend to Nginx..."
+
+            sudo rm -rf /usr/share/nginx/html/*
+
+            sudo cp -r dist/* /usr/share/nginx/html/
+
+            cd ..
+
+            ####################################################
+            # BACKEND
+            ####################################################
+
+            echo "Activating Python Virtual Environment..."
+
             source venv/bin/activate
 
-            echo "Installing dependencies..."
+            echo "Installing Python Dependencies..."
+
             pip install -r backend/requirements.txt
 
             cd backend
 
-            echo "Running migrations..."
+            echo "Running Migrations..."
+
             python manage.py migrate --noinput
 
-            echo "Collecting static files..."
+            echo "Collecting Static Files..."
+
             python manage.py collectstatic --noinput
 
+            cd ..
+
+            ####################################################
+            # RESTART SERVICES
+            ####################################################
+
             echo "Restarting Gunicorn..."
+
             sudo systemctl restart gunicorn
 
             echo "Restarting Nginx..."
+
             sudo systemctl restart nginx
 
-            echo "✅ Deployment completed successfully!"
+            echo "========== DEPLOY SUCCESSFUL =========="
