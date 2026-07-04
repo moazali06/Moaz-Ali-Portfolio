@@ -48,7 +48,6 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          script_stop: true
           script: |
             set -e
 
