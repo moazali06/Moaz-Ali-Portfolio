@@ -10,22 +10,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
       - name: Debug Secrets
+        env:
+          EC2_HOST: ${{ secrets.EC2_HOST }}
+          USERNAME: ${{ secrets.USERNAME }}
+          SSH_KEY: ${{ secrets.SSH_KEY }}
         run: |
-          if [ -z "${{ secrets.EC2_HOST }}" ]; then
+          echo "===== DEBUGGING SECRETS ====="
+
+          if [ -z "$EC2_HOST" ]; then
             echo "❌ EC2_HOST is EMPTY"
+            exit 1
           else
             echo "✅ EC2_HOST exists"
           fi
 
-          if [ -z "${{ secrets.USERNAME }}" ]; then
+          if [ -z "$USERNAME" ]; then
             echo "❌ USERNAME is EMPTY"
+            exit 1
           else
             echo "✅ USERNAME exists"
           fi
 
-          if [ -z "${{ secrets.SSH_KEY }}" ]; then
+          if [ -z "$SSH_KEY" ]; then
             echo "❌ SSH_KEY is EMPTY"
+            exit 1
           else
             echo "✅ SSH_KEY exists"
           fi
@@ -36,6 +48,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
+          script_stop: true
           script: |
             set -e
 
@@ -64,4 +77,4 @@ jobs:
             echo "Restarting Nginx..."
             sudo systemctl restart nginx
 
-            echo "Deployment completed successfully!"
+            echo "✅ Deployment completed successfully!"
