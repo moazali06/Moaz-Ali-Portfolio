@@ -795,104 +795,140 @@
     <!-- Layout Master Grid Structure -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
-        <!-- LEFT COLUMN: NARRATIVE & TECH ARCHITECTURE BLOCKS (7 Columns) -->
-        <div class="lg:col-span-7 space-y-12">
-            <!-- Heading Group -->
-            <div class="space-y-4">
-                <div class="text-sm font-bold tracking-[0.2em] text-[#22D3EE] uppercase font-mono">
-                    05. DevOps & Deployment
-                </div>
-                <h2 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-none">
-                    From Code to Production
-                </h2>
-                <p class="text-slate-400 text-lg leading-relaxed max-w-xl">
-                    I don't just write the code I deploy it, monitor it, and make sure it stays running. Full ownership from git push to Grafana.
-                </p>
+       <!-- LEFT COLUMN: NARRATIVE & TECH ARCHITECTURE BLOCKS (7 Columns) -->
+<div class="lg:col-span-7 space-y-12">
+    <!-- Heading Group -->
+    <div class="space-y-4">
+        <div class="text-sm font-bold tracking-[0.2em] text-[#22D3EE] uppercase font-mono">
+            05. DevOps & Deployment
+        </div>
+        <h2 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-none">
+            From Code to Production
+        </h2>
+        <p class="text-slate-400 text-lg leading-relaxed max-w-xl">
+            I don't just write the code—I deploy it, monitor it, and make sure it stays running. Full ownership from git push to Grafana.
+        </p>
+    </div>
+
+    <!-- Architecture Sub-Grid Framework -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+        <!-- BLOCK 1: CONTAINERIZATION -->
+        <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
+            <div class="flex items-center gap-3 text-white font-bold text-base">
+                <!-- Custom Hexagon Layers Icon (Containerization/Docker alternative) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-[#22D3EE]">
+                    <path d="m12 3-10 5 10 5 10-5-10-5Z"/>
+                    <path d="m2 17 10 5 10-5"/>
+                    <path d="m2 12 10 5 10-5"/>
+                </svg>
+                Containerization
             </div>
-
-            <!-- Architecture Sub-Grid Framework -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-
-                <!-- BLOCK 1: CONTAINERIZATION -->
-                <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl">
-                    <div class="flex items-center gap-3 text-white font-bold text-base">
-                        <span class="text-xl">🐳</span> Containerization
-                    </div>
-                    <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Docker</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Docker Compose</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Multi-stage builds</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Docker Hub</span>
-                    </div>
-                </div>
-
-                <!-- BLOCK 2: ORCHESTRATION -->
-                <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl">
-                    <div class="flex items-center gap-3 text-white font-bold text-base">
-                        <span class="text-xl">☸️</span> Orchestration
-                    </div>
-                    <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Kubernetes (EKS)</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Helm Charts</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">HPA / VPA</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">RBAC</span>
-                    </div>
-                </div>
-
-                <!-- BLOCK 3: CI/CD -->
-                <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl">
-                    <div class="flex items-center gap-3 text-white font-bold text-base">
-                        <span class="text-xl">🔄</span> CI/CD
-                    </div>
-                    <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">GitHub Actions</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">GitLab CI</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Jenkins</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">ArgoCD</span>
-                    </div>
-                </div>
-
-                <!-- BLOCK 4: CLOUD PLATFORMS -->
-                <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl">
-                    <div class="flex items-center gap-3 text-white font-bold text-base">
-                        <span class="text-xl">☁️</span> Cloud Platforms
-                    </div>
-                    <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">AWS (EC2, S3, RDS)</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">RunPod Cluster</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Vercel</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Railway</span>
-                    </div>
-                </div>
-
-                <!-- BLOCK 5: INFRASTRUCTURE AS CODE -->
-                <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl">
-                    <div class="flex items-center gap-3 text-white font-bold text-base">
-                        <span class="text-xl">📋</span> Infrastructure as Code
-                    </div>
-                    <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Terraform</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Ansible</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">AWS CDK</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Pulumi</span>
-                    </div>
-                </div>
-
-                <!-- BLOCK 6: OBSERVABILITY -->
-                <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl">
-                    <div class="flex items-center gap-3 text-white font-bold text-base">
-                        <span class="text-xl">📊</span> Observability
-                    </div>
-                    <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Prometheus + Grafana</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Loki</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Jaeger</span>
-                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Datadog</span>
-                    </div>
-                </div>
-
+            <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Docker</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Docker Compose</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Multi-stage builds</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Docker Hub</span>
             </div>
         </div>
+
+        <!-- BLOCK 2: ORCHESTRATION -->
+        <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
+            <div class="flex items-center gap-3 text-white font-bold text-base">
+                <!-- Kubernetes Wheel / Network Hub Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-network">
+                    <rect x="16" y="16" width="6" height="6" rx="1"/>
+                    <rect x="2" y="16" width="6" height="6" rx="1"/>
+                    <rect x="9" y="2" width="6" height="6" rx="1"/>
+                    <path d="M12 8v8"/>
+                    <path d="M12 16H5"/>
+                    <path d="M19 16h-7"/>
+                </svg>
+                Orchestration
+            </div>
+            <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Kubernetes (EKS)</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Helm Charts</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">HPA / VPA</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">RBAC</span>
+            </div>
+        </div>
+
+        <!-- BLOCK 3: CI/CD -->
+        <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
+            <div class="flex items-center gap-3 text-white font-bold text-base">
+                <!-- Git Branch / Delivery Pipeline Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-git-pull-request-arrow">
+                    <circle cx="5" cy="6" r="3"/>
+                    <circle cx="19" cy="18" r="3"/>
+                    <path d="m15 14-4-4v11"/>
+                    <path d="m11 10 4-4"/>
+                </svg>
+                CI/CD Pipelines
+            </div>
+            <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">GitHub Actions</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">GitLab CI</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Jenkins</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">ArgoCD</span>
+            </div>
+        </div>
+
+        <!-- BLOCK 4: CLOUD PLATFORMS -->
+        <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
+            <div class="flex items-center gap-3 text-white font-bold text-base">
+                <!-- Minimal Server Cloud Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud-lightning">
+                    <path d="M6 16.3A5 5 0 0 1 7 6.5a7 7 0 0 1 14 1.2a5.5 5.5 0 0 1-3.5 9.6"/>
+                    <path d="m13 14-3 4h5l-3 4"/>
+                </svg>
+                Cloud Architecture
+            </div>
+            <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">AWS (EC2, S3, RDS)</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">RunPod Cluster</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Vercel</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Railway</span>
+            </div>
+        </div>
+
+        <!-- BLOCK 5: INFRASTRUCTURE AS CODE -->
+        <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
+            <div class="flex items-center gap-3 text-white font-bold text-base">
+                <!-- Terminal / Code Infrastructure Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal">
+                    <polyline points="4 17 10 11 4 5"/>
+                    <line x1="12" x2="20" y1="19" y2="19"/>
+                </svg>
+                Infrastructure as Code
+            </div>
+            <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Terraform</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Ansible</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">AWS CDK</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Pulumi</span>
+            </div>
+        </div>
+
+        <!-- BLOCK 6: OBSERVABILITY -->
+        <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
+            <div class="flex items-center gap-3 text-white font-bold text-base">
+                <!-- Telemetry / Activity Monitor Gauge Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+                Observability & Metrics
+            </div>
+            <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Prometheus + Grafana</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Loki</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Jaeger</span>
+                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Datadog</span>
+            </div>
+        </div>
+
+    </div>
+</div>
 
         <!-- RIGHT COLUMN: HIGH-FI PREMIUM CODE TERMINAL CONTAINER (5 Columns) -->
         <div class="lg:col-span-5 w-full space-y-6">
