@@ -23,23 +23,23 @@ jobs:
 
           if [ -z "$EC2_HOST" ]; then
             echo "❌ EC2_HOST is EMPTY"
+            exit 1
           else
             echo "✅ EC2_HOST exists"
-            echo "Host Length: ${#EC2_HOST}"
           fi
 
           if [ -z "$USERNAME" ]; then
             echo "❌ USERNAME is EMPTY"
+            exit 1
           else
             echo "✅ USERNAME exists"
-            echo "Username: $USERNAME"
           fi
 
           if [ -z "$SSH_KEY" ]; then
             echo "❌ SSH_KEY is EMPTY"
+            exit 1
           else
             echo "✅ SSH_KEY exists"
-            echo "SSH Key Length: ${#SSH_KEY}"
           fi
 
       - name: Deploy to EC2
@@ -48,6 +48,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
+          script_stop: true
           script: |
             set -e
 
