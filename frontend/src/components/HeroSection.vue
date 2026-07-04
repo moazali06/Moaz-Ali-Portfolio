@@ -795,140 +795,140 @@
     <!-- Layout Master Grid Structure -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
-       <!-- LEFT COLUMN: NARRATIVE & TECH ARCHITECTURE BLOCKS (7 Columns) -->
-<div class="lg:col-span-7 space-y-12">
-    <!-- Heading Group -->
-    <div class="space-y-4">
-        <div class="text-sm font-bold tracking-[0.2em] text-[#22D3EE] uppercase font-mono">
-            05. DevOps & Deployment
+        <!-- LEFT COLUMN: NARRATIVE & TECH ARCHITECTURE BLOCKS (7 Columns) -->
+        <div class="lg:col-span-7 space-y-12">
+            <!-- Heading Group -->
+            <div class="space-y-4">
+                <div class="text-sm font-bold tracking-[0.2em] text-[#22D3EE] uppercase font-mono">
+                    05. DevOps & Deployment
+                </div>
+                <h2 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-none">
+                    From Code to Production
+                </h2>
+                <p class="text-slate-400 text-lg leading-relaxed max-w-xl">
+                    I don't just write the code—I deploy it, monitor it, and make sure it stays running. Full ownership from git push to Grafana.
+                </p>
+            </div>
+
+            <!-- Architecture Sub-Grid Framework -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                <!-- BLOCK 1: CONTAINERIZATION -->
+                <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
+                    <div class="flex items-center gap-3 text-white font-bold text-base">
+                        <!-- Custom Hexagon Layers Icon (Containerization/Docker alternative) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-[#22D3EE]">
+                            <path d="m12 3-10 5 10 5 10-5-10-5Z" />
+                            <path d="m2 17 10 5 10-5" />
+                            <path d="m2 12 10 5 10-5" />
+                        </svg>
+                        Containerization
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Docker</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Docker Compose</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Multi-stage builds</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Docker Hub</span>
+                    </div>
+                </div>
+
+                <!-- BLOCK 2: ORCHESTRATION -->
+                <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
+                    <div class="flex items-center gap-3 text-white font-bold text-base">
+                        <!-- Kubernetes Wheel / Network Hub Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-network">
+                            <rect x="16" y="16" width="6" height="6" rx="1" />
+                            <rect x="2" y="16" width="6" height="6" rx="1" />
+                            <rect x="9" y="2" width="6" height="6" rx="1" />
+                            <path d="M12 8v8" />
+                            <path d="M12 16H5" />
+                            <path d="M19 16h-7" />
+                        </svg>
+                        Orchestration
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Kubernetes (EKS)</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Helm Charts</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">HPA / VPA</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">RBAC</span>
+                    </div>
+                </div>
+
+                <!-- BLOCK 3: CI/CD -->
+                <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
+                    <div class="flex items-center gap-3 text-white font-bold text-base">
+                        <!-- Git Branch / Delivery Pipeline Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-git-pull-request-arrow">
+                            <circle cx="5" cy="6" r="3" />
+                            <circle cx="19" cy="18" r="3" />
+                            <path d="m15 14-4-4v11" />
+                            <path d="m11 10 4-4" />
+                        </svg>
+                        CI/CD Pipelines
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">GitHub Actions</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">GitLab CI</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Jenkins</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">ArgoCD</span>
+                    </div>
+                </div>
+
+                <!-- BLOCK 4: CLOUD PLATFORMS -->
+                <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
+                    <div class="flex items-center gap-3 text-white font-bold text-base">
+                        <!-- Minimal Server Cloud Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud-lightning">
+                            <path d="M6 16.3A5 5 0 0 1 7 6.5a7 7 0 0 1 14 1.2a5.5 5.5 0 0 1-3.5 9.6" />
+                            <path d="m13 14-3 4h5l-3 4" />
+                        </svg>
+                        Cloud Architecture
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">AWS (EC2, S3, RDS)</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">RunPod Cluster</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Vercel</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Railway</span>
+                    </div>
+                </div>
+
+                <!-- BLOCK 5: INFRASTRUCTURE AS CODE -->
+                <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
+                    <div class="flex items-center gap-3 text-white font-bold text-base">
+                        <!-- Terminal / Code Infrastructure Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal">
+                            <polyline points="4 17 10 11 4 5" />
+                            <line x1="12" x2="20" y1="19" y2="19" />
+                        </svg>
+                        Infrastructure as Code
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Terraform</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Ansible</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">AWS CDK</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Pulumi</span>
+                    </div>
+                </div>
+
+                <!-- BLOCK 6: OBSERVABILITY -->
+                <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
+                    <div class="flex items-center gap-3 text-white font-bold text-base">
+                        <!-- Telemetry / Activity Monitor Gauge Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg>
+                        Observability & Metrics
+                    </div>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Prometheus + Grafana</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Loki</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Jaeger</span>
+                        <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Datadog</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <h2 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-none">
-            From Code to Production
-        </h2>
-        <p class="text-slate-400 text-lg leading-relaxed max-w-xl">
-            I don't just write the code—I deploy it, monitor it, and make sure it stays running. Full ownership from git push to Grafana.
-        </p>
-    </div>
-
-    <!-- Architecture Sub-Grid Framework -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-
-        <!-- BLOCK 1: CONTAINERIZATION -->
-        <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
-            <div class="flex items-center gap-3 text-white font-bold text-base">
-                <!-- Custom Hexagon Layers Icon (Containerization/Docker alternative) -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-[#22D3EE]">
-                    <path d="m12 3-10 5 10 5 10-5-10-5Z"/>
-                    <path d="m2 17 10 5 10-5"/>
-                    <path d="m2 12 10 5 10-5"/>
-                </svg>
-                Containerization
-            </div>
-            <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Docker</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Docker Compose</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Multi-stage builds</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Docker Hub</span>
-            </div>
-        </div>
-
-        <!-- BLOCK 2: ORCHESTRATION -->
-        <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
-            <div class="flex items-center gap-3 text-white font-bold text-base">
-                <!-- Kubernetes Wheel / Network Hub Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-network">
-                    <rect x="16" y="16" width="6" height="6" rx="1"/>
-                    <rect x="2" y="16" width="6" height="6" rx="1"/>
-                    <rect x="9" y="2" width="6" height="6" rx="1"/>
-                    <path d="M12 8v8"/>
-                    <path d="M12 16H5"/>
-                    <path d="M19 16h-7"/>
-                </svg>
-                Orchestration
-            </div>
-            <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Kubernetes (EKS)</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Helm Charts</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">HPA / VPA</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">RBAC</span>
-            </div>
-        </div>
-
-        <!-- BLOCK 3: CI/CD -->
-        <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
-            <div class="flex items-center gap-3 text-white font-bold text-base">
-                <!-- Git Branch / Delivery Pipeline Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-git-pull-request-arrow">
-                    <circle cx="5" cy="6" r="3"/>
-                    <circle cx="19" cy="18" r="3"/>
-                    <path d="m15 14-4-4v11"/>
-                    <path d="m11 10 4-4"/>
-                </svg>
-                CI/CD Pipelines
-            </div>
-            <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">GitHub Actions</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">GitLab CI</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Jenkins</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">ArgoCD</span>
-            </div>
-        </div>
-
-        <!-- BLOCK 4: CLOUD PLATFORMS -->
-        <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
-            <div class="flex items-center gap-3 text-white font-bold text-base">
-                <!-- Minimal Server Cloud Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud-lightning">
-                    <path d="M6 16.3A5 5 0 0 1 7 6.5a7 7 0 0 1 14 1.2a5.5 5.5 0 0 1-3.5 9.6"/>
-                    <path d="m13 14-3 4h5l-3 4"/>
-                </svg>
-                Cloud Architecture
-            </div>
-            <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">AWS (EC2, S3, RDS)</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">RunPod Cluster</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Vercel</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Railway</span>
-            </div>
-        </div>
-
-        <!-- BLOCK 5: INFRASTRUCTURE AS CODE -->
-        <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
-            <div class="flex items-center gap-3 text-white font-bold text-base">
-                <!-- Terminal / Code Infrastructure Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal">
-                    <polyline points="4 17 10 11 4 5"/>
-                    <line x1="12" x2="20" y1="19" y2="19"/>
-                </svg>
-                Infrastructure as Code
-            </div>
-            <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Terraform</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Ansible</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">AWS CDK</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Pulumi</span>
-            </div>
-        </div>
-
-        <!-- BLOCK 6: OBSERVABILITY -->
-        <div class="bg-[#0B1220] border border-[#233554] rounded-2xl p-6 space-y-4 shadow-xl hover:border-[#22D3EE]/30 transition-colors duration-300">
-            <div class="flex items-center gap-3 text-white font-bold text-base">
-                <!-- Telemetry / Activity Monitor Gauge Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                </svg>
-                Observability & Metrics
-            </div>
-            <div class="flex flex-wrap gap-2 font-mono text-xs font-bold">
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Prometheus + Grafana</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Loki</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Jaeger</span>
-                <span class="text-[#22D3EE] bg-[#22D3EE]/5 border border-[#22D3EE]/20 px-3 py-1.5 rounded-full">Datadog</span>
-            </div>
-        </div>
-
-    </div>
-</div>
 
         <!-- RIGHT COLUMN: HIGH-FI PREMIUM CODE TERMINAL CONTAINER (5 Columns) -->
         <div class="lg:col-span-5 w-full space-y-6">
@@ -1617,94 +1617,64 @@
 
                 <form @submit.prevent="handleContactSubmit" class="space-y-6">
 
-    <div class="space-y-2">
-        <label class="block font-mono text-[10px] font-black text-slate-400 uppercase tracking-widest">
-            Your Name <span class="text-[#22D3EE]">*</span>
-        </label>
-        <input 
-            v-model="nameField"
-            type="text" 
-            placeholder="Moaz Ali" 
-            required 
-            :disabled="isSubmitting"
-            class="w-full bg-[#070D19] border border-[#233554] rounded-xl px-4 py-3.5 font-sans text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-[#22D3EE] focus:ring-1 focus:ring-[#22D3EE] transition-all duration-200 disabled:opacity-50" 
-        />
-    </div>
+                    <div class="space-y-2">
+                        <label class="block font-mono text-[10px] font-black text-slate-400 uppercase tracking-widest">
+                            Your Name <span class="text-[#22D3EE]">*</span>
+                        </label>
+                        <input v-model="nameField" type="text" placeholder="Moaz Ali" required :disabled="isSubmitting" class="w-full bg-[#070D19] border border-[#233554] rounded-xl px-4 py-3.5 font-sans text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-[#22D3EE] focus:ring-1 focus:ring-[#22D3EE] transition-all duration-200 disabled:opacity-50" />
+                    </div>
 
-    <div class="space-y-2">
-        <label class="block font-mono text-[10px] font-black text-slate-400 uppercase tracking-widest">
-            Email Address <span class="text-[#22D3EE]">*</span>
-        </label>
-        <input 
-            v-model="emailField"
-            type="email" 
-            placeholder="name@company.com" 
-            required 
-            :disabled="isSubmitting"
-            class="w-full bg-[#070D19] border border-[#233554] rounded-xl px-4 py-3.5 font-sans text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-[#22D3EE] focus:ring-1 focus:ring-[#22D3EE] transition-all duration-200 disabled:opacity-50" 
-        />
-    </div>
+                    <div class="space-y-2">
+                        <label class="block font-mono text-[10px] font-black text-slate-400 uppercase tracking-widest">
+                            Email Address <span class="text-[#22D3EE]">*</span>
+                        </label>
+                        <input v-model="emailField" type="email" placeholder="name@company.com" required :disabled="isSubmitting" class="w-full bg-[#070D19] border border-[#233554] rounded-xl px-4 py-3.5 font-sans text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-[#22D3EE] focus:ring-1 focus:ring-[#22D3EE] transition-all duration-200 disabled:opacity-50" />
+                    </div>
 
-    <div class="space-y-2">
-    <label class="block font-mono text-[10px] font-black text-slate-400 uppercase tracking-widest">
-        Project Budget
-    </label>
-    <div class="relative">
-        <select 
-            v-model="budgetField"
-            :disabled="isSubmitting"
-            class="w-full bg-[#070D19] border border-[#233554] rounded-xl px-4 py-3.5 font-sans text-sm text-slate-300 focus:outline-none focus:border-[#22D3EE] appearance-none cursor-pointer transition-all duration-200 disabled:opacity-50"
-        >
-            <option value="" disabled>Select a range</option>
-            <option value="$1,000 — $3,000">$1,000 — $3,000</option>
-            <option value="$3,000 — $5,000">$3,000 — $5,000</option>
-            <option value="$5,000 — $10,000+">$5,000 — $10,000+</option>
-        </select>
-        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
-            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
-            </svg>
-        </div>
-    </div>
-</div>
+                    <div class="space-y-2">
+                        <label class="block font-mono text-[10px] font-black text-slate-400 uppercase tracking-widest">
+                            Project Budget
+                        </label>
+                        <div class="relative">
+                            <select v-model="budgetField" :disabled="isSubmitting" class="w-full bg-[#070D19] border border-[#233554] rounded-xl px-4 py-3.5 font-sans text-sm text-slate-300 focus:outline-none focus:border-[#22D3EE] appearance-none cursor-pointer transition-all duration-200 disabled:opacity-50">
+                                <option value="" disabled>Select a range</option>
+                                <option value="$1,000 — $3,000">$1,000 — $3,000</option>
+                                <option value="$3,000 — $5,000">$3,000 — $5,000</option>
+                                <option value="$5,000 — $10,000+">$5,000 — $10,000+</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="space-y-2">
-        <label class="block font-mono text-[10px] font-black text-slate-400 uppercase tracking-widest">
-            Message <span class="text-[#22D3EE]">*</span>
-        </label>
-        <textarea 
-            v-model="messageField"
-            rows="4" 
-            required 
-            :disabled="isSubmitting"
-            placeholder="Tell me about your project, tech stack, timeline, and what you need help with..." 
-            class="w-full bg-[#070D19] border border-[#233554] rounded-xl px-4 py-3.5 font-sans text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-[#22D3EE] focus:ring-1 focus:ring-[#22D3EE] transition-all duration-200 resize-none disabled:opacity-50"
-        ></textarea>
-    </div>
+                    <div class="space-y-2">
+                        <label class="block font-mono text-[10px] font-black text-slate-400 uppercase tracking-widest">
+                            Message <span class="text-[#22D3EE]">*</span>
+                        </label>
+                        <textarea v-model="messageField" rows="4" required :disabled="isSubmitting" placeholder="Tell me about your project, tech stack, timeline, and what you need help with..." class="w-full bg-[#070D19] border border-[#233554] rounded-xl px-4 py-3.5 font-sans text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-[#22D3EE] focus:ring-1 focus:ring-[#22D3EE] transition-all duration-200 resize-none disabled:opacity-50"></textarea>
+                    </div>
 
-    <div v-if="submitStatus" class="text-xs font-mono transition-all duration-200">
-        <p :class="submitStatus.success ? 'text-emerald-400' : 'text-rose-400'">
-            {{ submitStatus.success ? '✓' : '⚠' }} {{ submitStatus.message }}
-        </p>
-    </div>
+                    <div v-if="submitStatus" class="text-xs font-mono transition-all duration-200">
+                        <p :class="submitStatus.success ? 'text-emerald-400' : 'text-rose-400'">
+                            {{ submitStatus.success ? '✓' : '⚠' }} {{ submitStatus.message }}
+                        </p>
+                    </div>
 
-    <div class="pt-2">
-        <button 
-            type="submit" 
-            :disabled="isSubmitting"
-            class="w-full group relative inline-flex items-center justify-center px-8 py-4 font-mono text-sm font-black rounded-xl overflow-hidden transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-            :class="isSubmitting ? 'bg-slate-700 text-slate-400 shadow-none' : 'text-[#0A192F] bg-[#22D3EE] hover:bg-[#3B82F6] shadow-[0_0_30px_rgba(34,211,238,0.2)] hover:shadow-[0_0_40px_rgba(59,130,246,0.4)]'"
-        >
-            <span class="relative flex items-center gap-2">
-                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
-                <svg v-if="!isSubmitting" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-            </span>
-        </button>
-    </div>
+                    <div class="pt-2">
+                        <button type="submit" :disabled="isSubmitting" class="w-full group relative inline-flex items-center justify-center px-8 py-4 font-mono text-sm font-black rounded-xl overflow-hidden transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed" :class="isSubmitting ? 'bg-slate-700 text-slate-400 shadow-none' : 'text-[#0A192F] bg-[#22D3EE] hover:bg-[#3B82F6] shadow-[0_0_30px_rgba(34,211,238,0.2)] hover:shadow-[0_0_40px_rgba(59,130,246,0.4)]'">
+                            <span class="relative flex items-center gap-2">
+                                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+                                <svg v-if="!isSubmitting" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
 
-</form>
+                </form>
             </div>
         </div>
 
@@ -1727,15 +1697,19 @@
 
 </section>
 </template>
+
 <style scoped>
 html {
-  scroll-behavior: smooth;
-  /* Agar navigation fixed hai aur section ka heading chhup raha hai, toh ye line help karegi */
-  scroll-padding-top: 100px; 
+    scroll-behavior: smooth;
+    /* Agar navigation fixed hai aur section ka heading chhup raha hai, toh ye line help karegi */
+    scroll-padding-top: 100px;
 }
 </style>
-<script setup>
-import { ref } from 'vue'
+
+<script>
+import {
+    ref
+} from 'vue'
 import InteractiveBackground from '../components/InteractiveBackground.vue'
 
 // 1. Form fields ko reactive refs banayein jo input tags ke sath v-model honge
@@ -1759,42 +1733,52 @@ const techStack = ref([
     'Bootstrap'
 ])
 
+
 // 2. API Call ko function ke andar dalein jo submit event par chalega
 const handleContactSubmit = async () => {
-  isSubmitting.value = true
-  submitStatus.value = null
+    isSubmitting.value = true
+    submitStatus.value = null
 
-  try {
-    const response = await fetch('/api/contact/submit/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name: nameField.value,
-        email: emailField.value,
-        message: messageField.value,
-        budget:budgetField.value,
-      })
-    })
+    try {
+        const response = await fetch('/api/contact/submit/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: nameField.value,
+                email: emailField.value,
+                message: messageField.value,
+                budget: budgetField.value,
+            })
+        })
 
-    const data = await response.json()
+        const data = await response.json()
 
-    if (response.ok) {
-      submitStatus.value = { success: true, message: 'Message sent successfully!' }
-      // Form fields ko khali kar dein submit hone ke baad
-      nameField.value = ''
-      emailField.value = ''
-      messageField.value = ''
-      budgetField.value = ''
-    } else {
-      submitStatus.value = { success: false, message: 'Something went wrong. Please check your fields.' }
+        if (response.ok) {
+            submitStatus.value = {
+                success: true,
+                message: 'Message sent successfully!'
+            }
+            // Form fields ko khali kar dein submit hone ke baad
+            nameField.value = ''
+            emailField.value = ''
+            messageField.value = ''
+            budgetField.value = ''
+        } else {
+            submitStatus.value = {
+                success: false,
+                message: 'Something went wrong. Please check your fields.'
+            }
+        }
+    } catch (error) {
+        submitStatus.value = {
+            success: false,
+            message: 'Unable to connect to the backend server.'
+        }
+        console.error('Error submitting form:', error)
+    } finally {
+        isSubmitting.value = false
     }
-  } catch (error) {
-    submitStatus.value = { success: false, message: 'Unable to connect to the backend server.' }
-    console.error('Error submitting form:', error)
-  } finally {
-    isSubmitting.value = false
-  }
 }
 </script>

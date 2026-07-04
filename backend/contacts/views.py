@@ -1,26 +1,28 @@
 from django.conf import settings
 from django.core.mail import send_mail
+# ==========================================
+# FIX: csrf_exempt ko import karein
+# ==========================================
+from django.views.decorators.csrf import csrf_exempt 
+
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from .serializers import ContactMessageSerializer
 
-
+@csrf_exempt
 @api_view(["POST"])
 def contact_form_submit(request):
     serializer = ContactMessageSerializer(data=request.data)
 
     if serializer.is_valid():
-
         contact = serializer.save()
 
         # ---------------------------
         # Email to Admin
         # ---------------------------
-
         admin_subject = f"New Portfolio Inquiry - {contact.name}"
-
         admin_message = f"""
 A new portfolio contact form has been submitted.
 
@@ -48,9 +50,7 @@ Message:
         # ---------------------------
         # Confirmation Email to User
         # ---------------------------
-
         user_subject = "Thank you for contacting Moaz Ali"
-
         user_message = f"""
 Hi {contact.name},
 
@@ -59,7 +59,6 @@ Thank you for reaching out.
 I have successfully received your message and will review it shortly.
 
 ----------------------------------
-
 Your Submission
 
 Name:
@@ -73,16 +72,13 @@ Budget:
 
 Message:
 {contact.message}
-
 ----------------------------------
 
 I will get back to you as soon as possible.
 
 Regards,
-
 Moaz Ali
 Full Stack Python Developer
-https://moazali.com
 """
 
         send_mail(
