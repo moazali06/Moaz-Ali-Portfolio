@@ -1706,35 +1706,24 @@ html {
 }
 </style>
 
-<script>
-import {
-    ref
-} from 'vue'
+<script setup>
+import { ref } from 'vue'
 import InteractiveBackground from '../components/InteractiveBackground.vue'
 
-// 1. Form fields ko reactive refs banayein jo input tags ke sath v-model honge
+// 1. Reactive Refs
 const nameField = ref('')
 const emailField = ref('')
 const messageField = ref('')
 const budgetField = ref('')
 
-// Loading aur status alerts ke liye reactive state trackers
 const isSubmitting = ref(false)
 const submitStatus = ref(null)
 
 const techStack = ref([
-    'Python',
-    'Django',
-    'Vue.js',
-    'React',
-    'PostgreSQL',
-    'SQL',
-    'Tailwind CSS',
-    'Bootstrap'
+    'Python', 'Django', 'Vue.js', 'React', 'PostgreSQL', 'SQL', 'Tailwind CSS', 'Bootstrap'
 ])
 
-
-// 2. API Call ko function ke andar dalein jo submit event par chalega
+// 2. Submit Handler
 const handleContactSubmit = async () => {
     isSubmitting.value = true
     submitStatus.value = null
@@ -1744,6 +1733,8 @@ const handleContactSubmit = async () => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                // Agar Django production secure settings on hain to ye line token pass karegi
+                'X-CSRFToken': document.cookie.match(/csrftoken=([^;]+)/)?.[1] || ''
             },
             body: JSON.stringify({
                 name: nameField.value,
@@ -1760,7 +1751,6 @@ const handleContactSubmit = async () => {
                 success: true,
                 message: 'Message sent successfully!'
             }
-            // Form fields ko khali kar dein submit hone ke baad
             nameField.value = ''
             emailField.value = ''
             messageField.value = ''
@@ -1768,7 +1758,7 @@ const handleContactSubmit = async () => {
         } else {
             submitStatus.value = {
                 success: false,
-                message: 'Something went wrong. Please check your fields.'
+                message: data.message || 'Something went wrong. Please check your fields.'
             }
         }
     } catch (error) {
