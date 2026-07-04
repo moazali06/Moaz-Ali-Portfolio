@@ -16,7 +16,7 @@
             </div>
 
             <h1 class="text-6xl sm:text-7xl xl:text-8xl font-extrabold text-white tracking-tight leading-[1.0] mb-3">
-                Backend Developers.
+                Backend Developer.
             </h1>
             <h2 class="text-6xl sm:text-7xl xl:text-8xl font-extrabold text-[#22D3EE] tracking-tight leading-[1.0] mb-10">
                 Full-Stack Ready.
