@@ -1720,7 +1720,7 @@
   </span>
 </a>
 <!-- AI CHATBOT COMPONENT CALL HERE -->
-   <!-- <PortfolioChatbot /> -->
+    <PortfolioChatbot /> 
 </template>
 
 <style scoped>
@@ -1734,7 +1734,7 @@ html {
 <script setup>
 import { ref } from 'vue'
 import InteractiveBackground from '../components/InteractiveBackground.vue'
-//import PortfolioChatbot from '../components/PortfolioChatbot.vue'
+import PortfolioChatbot from '../components/PortfolioChatbot.vue'
 
 // 1. Reactive Refs
 const nameField = ref('')
