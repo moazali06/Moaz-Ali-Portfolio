@@ -129,8 +129,13 @@ const sendMessage = async () => {
   isTyping.value = true
 
   try {
-    // Django endpoint par request bhej rahe hain
-    const response = await fetch('api/contact/chatbot/', {
+    // FIX: Starting clean forward slash lagayein taake base domain root standard mapping use ho
+    // Production aur local dono environments par automatic domain setup handle karne ke liye absolute standard fallback lagayein:
+    const baseUrl = window.location.origin.includes('localhost') || window.location.origin.includes('127.0.0.1')
+      ? 'http://127.0.0.1:8000'
+      : window.location.origin;
+
+    const response = await fetch('/api/contact/chatbot/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

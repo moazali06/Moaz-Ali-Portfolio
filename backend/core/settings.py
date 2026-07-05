@@ -35,6 +35,8 @@ ALLOWED_HOSTS = [
 CSRF_TRUSTED_ORIGINS = [
     "https://moazali.com",
     "https://www.moazali.com",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
 ]
 
 
@@ -65,8 +67,10 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173", # Vue ka default port (agar aapka port alag hai toh change karlein)
+    "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://moazali.com",
+    "https://www.moazali.com",
 ]
 
 # Taake Vue client requests bhej sake bina kisi issue ke
