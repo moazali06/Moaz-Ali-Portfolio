@@ -259,7 +259,7 @@ def grok_chatbot(request):
     
     payload = {
     # Isko default stable core model par set karein
-    "model": "grok-2-latest", 
+    "model": "grok-4.3", 
     "messages": [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_message}
