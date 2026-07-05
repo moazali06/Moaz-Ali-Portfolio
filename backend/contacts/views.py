@@ -146,13 +146,14 @@ def grok_chatbot(request):
     }
     
     payload = {
-        "model": "grok-2-1212", # Ya jo bhi current default grok model aap use karna chahein
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_message}
-        ],
-        "temperature": 0.7
-    }
+    # Isko default stable core model par set karein
+    "model": "grok-2-latest", 
+    "messages": [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_message}
+    ],
+    "temperature": 0.7
+}
     
     try:
         response = requests.post(url, json=payload, headers=headers, timeout=10)
