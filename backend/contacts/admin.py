@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import ContactMessage,ChatbotKnowledge, UnansweredQuery
 
 admin.site.register(ContactMessage)
+
 @admin.register(ChatbotKnowledge)
 class ChatbotKnowledgeAdmin(admin.ModelAdmin):
     list_display = ('category', 'keywords')
