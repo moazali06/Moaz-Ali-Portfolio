@@ -16,14 +16,14 @@
             </div>
 
             <h1 class="text-6xl sm:text-7xl xl:text-8xl font-extrabold text-white tracking-tight leading-[1.0] mb-3">
-                Backend Developer.
+                Software Engineer
             </h1>
             <h2 class="text-6xl sm:text-7xl xl:text-8xl font-extrabold text-[#22D3EE] tracking-tight leading-[1.0] mb-10">
-                Full-Stack Ready.
+                & Full-Stack Developer
             </h2>
 
             <p class="text-slate-400 text-lg sm:text-2xl max-w-4xl mb-12 leading-relaxed">
-                Hi, I'm <span class="text-white font-semibold">Moaz Ali</span>. I build <span class="text-[#22D3EE] font-medium">scalable web applications,</span> REST APIs, and business solutions using Python, Django, Vue.js, and PostgreSQL. I enjoy turning business requirements into reliable software that is easy to maintain and scale.
+                Hi, I'm <span class="text-white font-semibold">Moaz Ali</span>. I build <span class="text-[#22D3EE] font-medium">scalable Web Applications & SaaS Products,</span> REST APIs, and business solutions using Python, Django, Vue.js, and PostgreSQL. I enjoy turning business requirements into reliable software that is easy to maintain and scale.
             </p>
 
             <div class="flex flex-wrap gap-3.5 mb-16 max-w-3xl">
@@ -64,7 +64,7 @@
                 <div class="p-10 space-y-7 min-h-[400px] leading-relaxed">
                     <div>
                         <div class="text-[#3B82F6] flex items-center gap-3"><span>&gt;</span> whoami</div>
-                        <div class="text-slate-400 mt-2 pl-4">Moaz Ali — Backend Engineer & Founder</div>
+                        <div class="text-slate-400 mt-2 pl-4">Moaz Ali — Software Engineer & Full-Stack Developer</div>
                     </div>
 
                     <div>
@@ -162,7 +162,7 @@
 
         <div class="space-y-8 text-slate-400 text-lg sm:text-xl leading-relaxed font-normal">
             <p>
-                I'm <span class="text-white font-semibold">Moaz Ali</span>, a Backend Developer with 2+ years of experience building scalable systems and full-stack web applications. Based in Pakistan, I work across <span class="text-white font-semibold">Python (Django, FastAPI)</span>, modern JavaScript solutions, and robust cloud data pipelines.
+                I'm <span class="text-white font-semibold">Moaz Ali</span>, a Software Engineer & Full-Stack Developer based in Pakistan with 2+ years of experience building scalable systems and full-stack web applications. Based in Pakistan, I work across <span class="text-white font-semibold">Python (Django, FastAPI)</span>, modern JavaScript solutions, and robust cloud data pipelines.
             </p>
 
             <p>
@@ -196,7 +196,7 @@
                     <span class="text-[#3B82F6]">"name"</span>: <span class="text-[#22D3EE]">"Moaz Ali"</span>,
                 </div>
                 <div class="pl-4">
-                    <span class="text-[#3B82F6]">"role"</span>: <span class="text-[#22D3EE]">"Backend Developer"</span>,
+                    <span class="text-[#3B82F6]">"role"</span>: <span class="text-[#22D3EE]">"Software Engineer & Full-Stack Developer"</span>,
                 </div>
                 <div class="pl-4">
                     <span class="text-[#3B82F6]">"location"</span>: <span class="text-[#22D3EE]">"Pakistan (Remote-Ready)"</span>,
