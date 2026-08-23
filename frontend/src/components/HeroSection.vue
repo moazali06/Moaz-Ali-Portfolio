@@ -419,232 +419,1330 @@
     </div>
 </section>
 
-<!-- 6. PROJECTS SECTION (PRODUCTION WORK & CASE STUDIES) -->
+<!-- 6. PROJECTS SECTION -->
 <section id="work" class="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-16 pt-24 pb-32">
 
-    <!-- Top Heading Block -->
-    <div class="w-full max-w-3xl text-left mb-16">
-        <!-- Section Index Tag -->
+    <!-- Section Heading -->
+    <div class="w-full max-w-4xl text-left mb-16">
+
         <div class="text-sm font-bold tracking-[0.2em] text-[#22D3EE] uppercase font-mono mb-4">
             03. Projects
         </div>
-        <!-- Main Section Title -->
+
         <h2 class="text-4xl sm:text-5xl xl:text-6xl font-black text-white tracking-tight leading-tight mb-6">
-            Production Work & Case Studies
+            Production Work & Software Projects
         </h2>
-        <!-- Subtitle Narrative -->
+
         <p class="text-slate-400 text-lg sm:text-xl leading-relaxed">
-            Real systems built for real traffic. Each case study covers architecture decisions, technical challenges, and measurable outcomes.
+            A selection of production websites, software systems, and professional development work across full-stack web development, backend engineering, and frontend development.
         </p>
     </div>
 
-    <!-- Projects Cards Layout Grid Matrix -->
-    <div id="projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <!-- CARD 1: Candidate Test Platform -->
-        <div class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-8 hover:border-[#3B82F6]/50 transition-all duration-300 flex flex-col justify-between shadow-xl group">
+    <!-- ========================================================= -->
+    <!-- 03.1 PERSONALLY DEVELOPED PROJECTS -->
+    <!-- ========================================================= -->
+
+    <div class="mb-20">
+
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
             <div>
-                <!-- Status Ribbon Block -->
-                <div class="flex justify-between items-center mb-6 font-mono text-xs">
-                    <div class="flex items-center gap-2 text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                        Live
-                    </div>
-                    <span class="text-slate-500 font-bold">2026</span>
+                <div class="text-xs font-mono font-bold tracking-[0.18em] text-[#22D3EE] uppercase mb-2">
+                    Featured Work
                 </div>
 
-                <!-- Project Identity Header -->
-                <h3 class="text-2xl font-black text-white tracking-wide mb-2 group-hover:text-[#22D3EE] transition-colors duration-300">
-                    Candidate Test Platform
+                <h3 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
+                    Personally Developed
                 </h3>
-                <p class="text-sm font-semibold text-[#22D3EE] font-mono mb-6 leading-snug">
-                    Online Exam & Candidate Management System
-                </p>
-                <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8">
-                    An online assessment platform that allows organizations to conduct tests, manage candidates, and evaluate results efficiently.
-
-                    Built a full-stack system for online evaluations with role-based access, automated scoring logic, and structured candidate management.
-                </p>
             </div>
 
-            <!-- Metrics Analytics Grid Frame & Tags -->
-            <div class="space-y-6 pt-6 border-t border-[#233554]">
-                <div class="grid grid-cols-2 gap-4 font-mono">
-                    <div>
-                        <div class="text-lg font-bold text-white tracking-tight">3-Month</div>
-                        <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">Delivery Timeline</div>
-                    </div>
-                    <div>
-                        <div class="text-lg font-bold text-[#22D3EE] tracking-tight">LoRA</div>
-                        <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">Custom Training</div>
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap gap-2 text-xs font-mono font-bold pt-2">
-                    <span class="text-[#3B82F6] bg-[#3B82F6]/10 px-3 py-1 rounded-md">Django</span>
-                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">Vue.js</span>
-                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">PostgreSQL</span>
-                </div>
-            </div>
+            <span class="text-xs font-mono text-slate-500">
+                Full-Stack Development
+            </span>
         </div>
 
-        <!-- CARD 2: HIREHARRY.AI -->
-        <div class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-8 hover:border-[#22D3EE]/50 transition-all duration-300 flex flex-col justify-between shadow-xl group">
-            <div>
-                <!-- Status Ribbon Block -->
-                <div class="flex justify-between items-center mb-6 font-mono text-xs">
-                    <div class="flex items-center gap-2 text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                        Live
-                    </div>
-                    <span class="text-slate-500 font-bold">2026</span>
-                </div>
 
-                <!-- Project Identity Header -->
-                <h3 class="text-2xl font-black text-white tracking-wide mb-2 group-hover:text-[#22D3EE] transition-colors duration-300">
-                    Tool Website
-                </h3>
-                <p class="text-sm font-semibold text-[#22D3EE] font-mono mb-6 leading-snug">
-                    Utility-Based Web Application Platform
-                </p>
-                <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8">
-                    A web platform that provides simple online tools to help users perform common digital tasks efficiently.
+        <div id="projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    Key Features:
-                    Multiple utility tools in one platform,
-                    Fast and responsive UI,
-                    Clean and minimal user interface,
-                    Modular tool-based architecture,
-                    Easy navigation between tools.
-                </p>
-            </div>
 
-            <!-- Metrics Analytics Grid Frame & Tags -->
-            <div class="space-y-6 pt-6 border-t border-[#233554]">
-                <div class="grid grid-cols-2 gap-4 font-mono">
-                    <div>
-                        <div class="text-lg font-bold text-white tracking-tight">FastAPI</div>
-                        <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">Core Backend</div>
-                    </div>
-                    <div>
-                        <div class="text-lg font-bold text-[#22D3EE] tracking-tight">99.4%</div>
-                        <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">Test Coverage</div>
-                    </div>
-                </div>
+            <!-- PROJECT 1: HIBACHI OMAKASE -->
+            <article
+                class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-8 hover:border-[#22D3EE]/50 transition-all duration-300 flex flex-col justify-between shadow-xl group"
+                itemscope
+                itemtype="https://schema.org/SoftwareApplication"
+            >
 
-                <div class="flex flex-wrap gap-2 text-xs font-mono font-bold pt-2">
-                    <span class="text-[#3B82F6] bg-[#3B82F6]/10 px-3 py-1 rounded-md">Vue.js</span>
-                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">Django</span>
-                </div>
-            </div>
-        </div>
+                <div>
 
-        <!-- CARD 3: AI INFLUENCER GENERATOR -->
-        <div class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-8 hover:border-[#3B82F6]/50 transition-all duration-300 flex flex-col justify-between shadow-xl group">
-            <div>
-                <!-- Status Ribbon Block -->
-                <div class="flex justify-between items-center mb-6 font-mono text-xs">
+                    <div class="flex justify-between items-center mb-6 font-mono text-xs">
 
-                    <span class="text-slate-500 font-bold">2025</span>
-                </div>
-
-                <!-- Project Identity Header -->
-                <h3 class="text-2xl font-black text-white tracking-wide mb-2 group-hover:text-[#22D3EE] transition-colors duration-300">
-                    School Management System
-                </h3>
-                <p class="text-sm font-semibold text-[#22D3EE] font-mono mb-6 leading-snug">
-                    Educational Administration System
-                </p>
-                <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8">
-                    A web-based system designed to manage school operations including students, teachers, classes, and academic records in a structured way.
-
-                    Key Features:
-                    Student and teacher management system,
-                    Class and subject organization,
-                    Attendance tracking system,
-                    Academic record management,
-                    Role-based access control (Admin / Teacher / Student)
-                </p>
-            </div>
-
-            <!-- Metrics Analytics Grid Frame & Tags -->
-            <div class="space-y-6 pt-6 border-t border-[#233554]">
-                <div class="grid grid-cols-2 gap-4 font-mono">
-                    <div>
-                        <div class="text-lg font-bold text-white tracking-tight">3-Months</div>
-                        <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">FYP</div>
-                    </div>
-
-                </div>
-
-                <div class="flex flex-wrap gap-2 text-xs font-mono font-bold pt-2">
-                    <span class="text-[#3B82F6] bg-[#3B82F6]/10 px-3 py-1 rounded-md">Django</span>
-                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">Quasar</span>
-                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">SQLite</span>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- 6.1 OTHER NOTABLE PROJECTS (TABLE LIST VIEW) -->
-    <div class="mt-16 w-full bg-[#0B1220] border-2 border-[#233554] rounded-[24px] overflow-hidden shadow-2xl">
-
-        <!-- Table Header Title Container -->
-        <div class="bg-[#112240]/40 px-6 sm:px-8 py-5 border-b border-[#233554]">
-            <h4 class="text-sm font-mono font-bold tracking-wider text-slate-300 uppercase">
-                Other Notable Projects
-            </h4>
-        </div>
-
-        <!-- Table Body Row Structure -->
-        <div class="divide-y divide-[#233554]/60">
-
-            <!-- ROW 1: FLATGIGS MODULE -->
-            <div class="p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6 hover:bg-[#112240]/20 transition-colors duration-200 group">
-                <div class="space-y-2">
-                    <div class="flex flex-wrap items-center gap-3">
-                        <h5 class="text-lg font-bold text-white group-hover:text-[#22D3EE] transition-colors duration-200">
-                            Flatgigs Portal Integration
-                        </h5>
-                        <span class="flex items-center gap-1.5 font-mono text-[11px] text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
+                        <div class="flex items-center gap-2 text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
                             <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
                             Live
+                        </div>
+
+                        <span class="text-slate-500 font-bold">
+                            Production
                         </span>
+
                     </div>
-                    <p class="text-sm text-slate-400 max-w-2xl">
-                        Custom remote infrastructure modules built utilizing Django frameworks to securely orchestrate multi-regional background pipelines.
+
+
+                    <h4
+                        class="text-2xl font-black text-white tracking-wide mb-2 group-hover:text-[#22D3EE] transition-colors duration-300"
+                        itemprop="name"
+                    >
+                        Hibachi Omakase
+                    </h4>
+
+                    <p class="text-sm font-semibold text-[#22D3EE] font-mono mb-6">
+                        Full-Stack Web Development
                     </p>
+
+                    <p
+                        class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8"
+                        itemprop="description"
+                    >
+                        Personally developed a production web platform for Hibachi Omakase, working across frontend and backend development. Built responsive interfaces, backend functionality, database-driven features, and API integrations for a complete full-stack solution.
+                    </p>
+
                 </div>
-                <!-- Tech Badges Stack -->
-                <div class="flex flex-wrap sm:justify-end gap-2 text-xs font-mono font-bold">
-                    <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">Python</span>
-                    <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">Django</span>
-                    <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">PostgreSQL</span>
+
+
+                <div class="space-y-6 pt-6 border-t border-[#233554]">
+
+                    <div class="grid grid-cols-2 gap-4 font-mono">
+
+                        <div>
+                            <div class="text-lg font-bold text-white">
+                                Full-Stack
+                            </div>
+
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">
+                                Role
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-lg font-bold text-[#22D3EE]">
+                                Live
+                            </div>
+
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">
+                                Status
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="flex flex-wrap gap-2 text-xs font-mono font-bold pt-2">
+
+                        <span class="text-[#3B82F6] bg-[#3B82F6]/10 px-3 py-1 rounded-md">
+                            Django
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Django REST Framework
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Vue.js
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Tailwind CSS
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            PostgreSQL
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="https://www.hibachiomakase.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        itemprop="url"
+                        class="inline-flex items-center gap-2 text-sm font-mono font-bold text-[#22D3EE] hover:text-white transition-colors"
+                    >
+                        Visit Website →
+                    </a>
+
                 </div>
-            </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 2: ANGELIC TOUCH SPA -->
+            <article
+                class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-8 hover:border-[#3B82F6]/50 transition-all duration-300 flex flex-col justify-between shadow-xl group"
+                itemscope
+                itemtype="https://schema.org/SoftwareApplication"
+            >
+
+                <div>
+
+                    <div class="flex justify-between items-center mb-6 font-mono text-xs">
+
+                        <div class="flex items-center gap-2 text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                            Live
+                        </div>
+
+                        <span class="text-slate-500 font-bold">
+                            Production
+                        </span>
+
+                    </div>
+
+
+                    <h4
+                        class="text-2xl font-black text-white tracking-wide mb-2 group-hover:text-[#22D3EE] transition-colors"
+                        itemprop="name"
+                    >
+                        Angelic Touch Spa
+                    </h4>
+
+                    <p class="text-sm font-semibold text-[#22D3EE] font-mono mb-6">
+                        Full-Stack Web Development
+                    </p>
+
+                    <p
+                        class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8"
+                        itemprop="description"
+                    >
+                        Personally developed a responsive web platform for Angelic Touch Spa, working across frontend and backend development, API-driven functionality, database operations, and production-ready application implementation.
+                    </p>
+
+                </div>
+
+
+                <div class="space-y-6 pt-6 border-t border-[#233554]">
+
+                    <div class="grid grid-cols-2 gap-4 font-mono">
+
+                        <div>
+                            <div class="text-lg font-bold text-white">
+                                Full-Stack
+                            </div>
+
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">
+                                Role
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-lg font-bold text-[#22D3EE]">
+                                Live
+                            </div>
+
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">
+                                Status
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="flex flex-wrap gap-2 text-xs font-mono font-bold pt-2">
+
+                        <span class="text-[#3B82F6] bg-[#3B82F6]/10 px-3 py-1 rounded-md">
+                            Django
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Django REST Framework
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Vue.js
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Quasar
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            PostgreSQL
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="https://www.angelictouchspa.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        itemprop="url"
+                        class="inline-flex items-center gap-2 text-sm font-mono font-bold text-[#22D3EE] hover:text-white transition-colors"
+                    >
+                        Visit Website →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 3: REMEDI SPA -->
+            <article
+                class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-8 hover:border-[#22D3EE]/50 transition-all duration-300 flex flex-col justify-between shadow-xl group"
+                itemscope
+                itemtype="https://schema.org/SoftwareApplication"
+            >
+
+                <div>
+
+                    <div class="flex justify-between items-center mb-6 font-mono text-xs">
+
+                        <div class="flex items-center gap-2 text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                            Live
+                        </div>
+
+                        <span class="text-slate-500 font-bold">
+                            Production
+                        </span>
+
+                    </div>
+
+
+                    <h4
+                        class="text-2xl font-black text-white tracking-wide mb-2 group-hover:text-[#22D3EE] transition-colors"
+                        itemprop="name"
+                    >
+                        Remedi Spa
+                    </h4>
+
+                    <p class="text-sm font-semibold text-[#22D3EE] font-mono mb-6">
+                        Full-Stack Web Development
+                    </p>
+
+                    <p
+                        class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8"
+                        itemprop="description"
+                    >
+                        Personally developed a full-stack web solution for Remedi Spa, combining responsive frontend development with Django-powered backend services, API integration, database operations, and production application functionality.
+                    </p>
+
+                </div>
+
+
+                <div class="space-y-6 pt-6 border-t border-[#233554]">
+
+                    <div class="grid grid-cols-2 gap-4 font-mono">
+
+                        <div>
+                            <div class="text-lg font-bold text-white">
+                                Full-Stack
+                            </div>
+
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">
+                                Role
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-lg font-bold text-[#22D3EE]">
+                                Live
+                            </div>
+
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">
+                                Status
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="flex flex-wrap gap-2 text-xs font-mono font-bold pt-2">
+
+                        <span class="text-[#3B82F6] bg-[#3B82F6]/10 px-3 py-1 rounded-md">
+                            Django
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Django REST Framework
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Vue.js
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Tailwind CSS
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            PostgreSQL
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="https://remedispa.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        itemprop="url"
+                        class="inline-flex items-center gap-2 text-sm font-mono font-bold text-[#22D3EE] hover:text-white transition-colors"
+                    >
+                        Visit Website →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 4: SALON RIZ -->
+            <article
+                class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-8 hover:border-[#3B82F6]/50 transition-all duration-300 flex flex-col justify-between shadow-xl group"
+                itemscope
+                itemtype="https://schema.org/SoftwareApplication"
+            >
+
+                <div>
+
+                    <div class="flex justify-between items-center mb-6 font-mono text-xs">
+
+                        <div class="flex items-center gap-2 text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                            Live
+                        </div>
+
+                        <span class="text-slate-500 font-bold">
+                            Production
+                        </span>
+
+                    </div>
+
+
+                    <h4
+                        class="text-2xl font-black text-white tracking-wide mb-2 group-hover:text-[#22D3EE] transition-colors"
+                        itemprop="name"
+                    >
+                        Salon Riz
+                    </h4>
+
+                    <p class="text-sm font-semibold text-[#22D3EE] font-mono mb-6">
+                        Full-Stack Web Development
+                    </p>
+
+                    <p
+                        class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8"
+                        itemprop="description"
+                    >
+                        Personally developed the Salon Riz web platform across frontend and backend layers, implementing responsive interfaces, backend APIs, database-driven functionality, and production-ready application features.
+                    </p>
+
+                </div>
+
+
+                <div class="space-y-6 pt-6 border-t border-[#233554]">
+
+                    <div class="grid grid-cols-2 gap-4 font-mono">
+
+                        <div>
+                            <div class="text-lg font-bold text-white">
+                                Full-Stack
+                            </div>
+
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">
+                                Role
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-lg font-bold text-[#22D3EE]">
+                                Live
+                            </div>
+
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">
+                                Status
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="flex flex-wrap gap-2 text-xs font-mono font-bold pt-2">
+
+                        <span class="text-[#3B82F6] bg-[#3B82F6]/10 px-3 py-1 rounded-md">
+                            Django
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Django REST Framework
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Vue.js
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Quasar
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            PostgreSQL
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="https://www.salonriz.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        itemprop="url"
+                        class="inline-flex items-center gap-2 text-sm font-mono font-bold text-[#22D3EE] hover:text-white transition-colors"
+                    >
+                        Visit Website →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 5: MAKEOVER PAKISTAN -->
+            <article
+                class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-8 hover:border-[#22D3EE]/50 transition-all duration-300 flex flex-col justify-between shadow-xl group"
+                itemscope
+                itemtype="https://schema.org/SoftwareApplication"
+            >
+
+                <div>
+
+                    <div class="flex justify-between items-center mb-6 font-mono text-xs">
+
+                        <div class="flex items-center gap-2 text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                            Live
+                        </div>
+
+                        <span class="text-slate-500 font-bold">
+                            Production
+                        </span>
+
+                    </div>
+
+
+                    <h4
+                        class="text-2xl font-black text-white tracking-wide mb-2 group-hover:text-[#22D3EE] transition-colors"
+                        itemprop="name"
+                    >
+                        Makeover Pakistan
+                    </h4>
+
+                    <p class="text-sm font-semibold text-[#22D3EE] font-mono mb-6">
+                        Full-Stack Web Development
+                    </p>
+
+                    <p
+                        class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8"
+                        itemprop="description"
+                    >
+                        Personally developed the Makeover Pakistan web platform, working across frontend and backend development with responsive UI implementation, API integration, database functionality, and production-ready application development.
+                    </p>
+
+                </div>
+
+
+                <div class="space-y-6 pt-6 border-t border-[#233554]">
+
+                    <div class="grid grid-cols-2 gap-4 font-mono">
+
+                        <div>
+                            <div class="text-lg font-bold text-white">
+                                Full-Stack
+                            </div>
+
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">
+                                Role
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-lg font-bold text-[#22D3EE]">
+                                Live
+                            </div>
+
+                            <div class="text-[11px] text-slate-500 uppercase tracking-wider mt-0.5">
+                                Status
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="flex flex-wrap gap-2 text-xs font-mono font-bold pt-2">
+
+                        <span class="text-[#3B82F6] bg-[#3B82F6]/10 px-3 py-1 rounded-md">
+                            Django
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Django REST Framework
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Vue.js
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            Tailwind CSS
+                        </span>
+
+                        <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                            PostgreSQL
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="https://www.makeoverpakistan.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        itemprop="url"
+                        class="inline-flex items-center gap-2 text-sm font-mono font-bold text-[#22D3EE] hover:text-white transition-colors"
+                    >
+                        Visit Website →
+                    </a>
+
+                </div>
+
+            </article>
 
         </div>
     </div>
 
-    <!-- BOTTOM CALL TO ACTION: VIEW ALL PROJECTS BUTTON -->
-    <div class="mt-16 w-full flex justify-center">
-        <a href="https://github.com/moazali06" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center px-8 py-4 font-mono text-sm font-bold text-[#22D3EE] border border-[#22D3EE] rounded-xl overflow-hidden shadow-[0_0_20px_rgba(34,211,238,0.1)] hover:shadow-[0_0_35px_rgba(34,211,238,0.25)] transition-all duration-300">
-            <span class="absolute inset-0 w-full h-full bg-[#22D3EE]/5 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-            <span class="relative flex items-center gap-2">
-                View All Projects
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
+
+
+    <!-- ========================================================= -->
+    <!-- 03.2 PROFESSIONAL TEAM CONTRIBUTIONS -->
+    <!-- ========================================================= -->
+
+    <div class="mb-20">
+
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+
+            <div>
+
+                <div class="text-xs font-mono font-bold tracking-[0.18em] text-[#22D3EE] uppercase mb-2">
+                    Professional Contributions
+                </div>
+
+                <h3 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
+                    Team Projects
+                </h3>
+
+            </div>
+
+            <span class="text-xs font-mono text-slate-500">
+                Frontend & Backend Contributions
             </span>
-        </a>
+
+        </div>
+
+
+        <div class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] overflow-hidden shadow-2xl">
+
+            <div class="divide-y divide-[#233554]/60">
+
+
+                <!-- TEAM PROJECT 1 -->
+                <article class="p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 hover:bg-[#112240]/20 transition-colors duration-200 group">
+
+                    <div class="space-y-3 max-w-3xl">
+
+                        <div class="flex flex-wrap items-center gap-3">
+
+                            <h4 class="text-xl font-bold text-white group-hover:text-[#22D3EE] transition-colors">
+                                Maison Madison NY
+                            </h4>
+
+                            <span class="font-mono text-[11px] text-blue-300 bg-blue-500/10 px-2.5 py-0.5 rounded-full border border-blue-500/20">
+                                Frontend Developer
+                            </span>
+
+                            <span class="font-mono text-[11px] text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
+                                Live
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Contributed to frontend development, responsive interface implementation, reusable UI components, and frontend integration as part of a collaborative development team.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 text-xs font-mono font-bold">
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Vue.js
+                            </span>
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Quasar
+                            </span>
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Tailwind CSS
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="https://www.maisonmadisonny.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="shrink-0 inline-flex items-center gap-2 text-sm font-mono font-bold text-[#22D3EE] hover:text-white transition-colors"
+                    >
+                        Visit Website →
+                    </a>
+
+                </article>
+
+
+
+                <!-- TEAM PROJECT 2 -->
+                <article class="p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 hover:bg-[#112240]/20 transition-colors duration-200 group">
+
+                    <div class="space-y-3 max-w-3xl">
+
+                        <div class="flex flex-wrap items-center gap-3">
+
+                            <h4 class="text-xl font-bold text-white group-hover:text-[#22D3EE] transition-colors">
+                                Cipriani
+                            </h4>
+
+                            <span class="font-mono text-[11px] text-blue-300 bg-blue-500/10 px-2.5 py-0.5 rounded-full border border-blue-500/20">
+                                Frontend Developer
+                            </span>
+
+                            <span class="font-mono text-[11px] text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
+                                Live
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Contributed to frontend development for the Cipriani web platform, working on responsive user interfaces, reusable components, and frontend integration as part of a collaborative development team.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 text-xs font-mono font-bold">
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Vue.js
+                            </span>
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Quasar
+                            </span>
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Tailwind CSS
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="https://www.cipriani.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="shrink-0 inline-flex items-center gap-2 text-sm font-mono font-bold text-[#22D3EE] hover:text-white transition-colors"
+                    >
+                        Visit Website →
+                    </a>
+
+                </article>
+
+
+
+                <!-- TEAM PROJECT 3 -->
+                <article class="p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 hover:bg-[#112240]/20 transition-colors duration-200 group">
+
+                    <div class="space-y-3 max-w-3xl">
+
+                        <div class="flex flex-wrap items-center gap-3">
+
+                            <h4 class="text-xl font-bold text-white group-hover:text-[#22D3EE] transition-colors">
+                                Sams Threading
+                            </h4>
+
+                            <span class="font-mono text-[11px] text-purple-300 bg-purple-500/10 px-2.5 py-0.5 rounded-full border border-purple-500/20">
+                                Backend Developer
+                            </span>
+
+                            <span class="font-mono text-[11px] text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
+                                Live
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Contributed to backend development, API functionality, database operations, and integration work for the Sams Threading web platform as part of a collaborative development team.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 text-xs font-mono font-bold">
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Python
+                            </span>
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Django
+                            </span>
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Django REST Framework
+                            </span>
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                PostgreSQL
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="https://samsthreading.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="shrink-0 inline-flex items-center gap-2 text-sm font-mono font-bold text-[#22D3EE] hover:text-white transition-colors"
+                    >
+                        Visit Website →
+                    </a>
+
+                </article>
+
+
+
+                <!-- TEAM PROJECT 4 -->
+                <article class="p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 hover:bg-[#112240]/20 transition-colors duration-200 group">
+
+                    <div class="space-y-3 max-w-3xl">
+
+                        <div class="flex flex-wrap items-center gap-3">
+
+                            <h4 class="text-xl font-bold text-white group-hover:text-[#22D3EE] transition-colors">
+                                The Body Shop Pakistan
+                            </h4>
+
+                            <span class="font-mono text-[11px] text-purple-300 bg-purple-500/10 px-2.5 py-0.5 rounded-full border border-purple-500/20">
+                                Backend Developer
+                            </span>
+
+                            <span class="font-mono text-[11px] text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
+                                Live
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Contributed to backend development, API functionality, database-driven features, and integration work for The Body Shop Pakistan platform as part of a collaborative development team.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 text-xs font-mono font-bold">
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Python
+                            </span>
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Django
+                            </span>
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Django REST Framework
+                            </span>
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                PostgreSQL
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="https://www.thebodyshop.pk/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="shrink-0 inline-flex items-center gap-2 text-sm font-mono font-bold text-[#22D3EE] hover:text-white transition-colors"
+                    >
+                        Visit Website →
+                    </a>
+
+                </article>
+
+
+
+                <!-- TEAM PROJECT 5 -->
+                <article class="p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6 hover:bg-[#112240]/20 transition-colors duration-200 group">
+
+                    <div class="space-y-3 max-w-3xl">
+
+                        <div class="flex flex-wrap items-center gap-3">
+
+                            <h4 class="text-xl font-bold text-white group-hover:text-[#22D3EE] transition-colors">
+                                The Skin Fit
+                            </h4>
+
+                            <span class="font-mono text-[11px] text-blue-300 bg-blue-500/10 px-2.5 py-0.5 rounded-full border border-blue-500/20">
+                                Frontend Developer
+                            </span>
+
+                            <span class="font-mono text-[11px] text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
+                                Live
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Contributed to frontend development for The Skin Fit web platform, implementing responsive interfaces, reusable UI components, and frontend integrations as part of a collaborative development team.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 text-xs font-mono font-bold">
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Vue.js
+                            </span>
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Quasar
+                            </span>
+
+                            <span class="text-[#22D3EE] border border-[#233554] bg-[#112240]/50 px-3 py-1 rounded-full">
+                                Tailwind CSS
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="https://theskinfit.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="shrink-0 inline-flex items-center gap-2 text-sm font-mono font-bold text-[#22D3EE] hover:text-white transition-colors"
+                    >
+                        Visit Website →
+                    </a>
+
+                </article>
+
+            </div>
+        </div>
+
     </div>
+
+
+
+    <!-- ========================================================= -->
+    <!-- 03.3 SOFTWARE SYSTEMS -->
+    <!-- ========================================================= -->
+
+    <div class="mb-20">
+
+        <div class="mb-8">
+
+            <div class="text-xs font-mono font-bold tracking-[0.18em] text-[#22D3EE] uppercase mb-2">
+                Software Engineering
+            </div>
+
+            <h3 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
+                Software Systems
+            </h3>
+
+            <p class="text-slate-400 mt-4 max-w-3xl leading-relaxed">
+                Business-focused software systems developed across education, recruitment, healthcare, and operational workflows.
+            </p>
+
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+
+            <!-- SCHOOL MANAGEMENT SYSTEM -->
+            <article class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-7 hover:border-[#22D3EE]/50 transition-all duration-300 group">
+
+                <div class="flex justify-between items-start gap-4 mb-5">
+
+                    <div>
+
+                        <span class="text-xs font-mono text-[#22D3EE] uppercase tracking-wider">
+                            Education
+                        </span>
+
+                        <h4 class="text-xl font-black text-white mt-2 group-hover:text-[#22D3EE] transition-colors">
+                            School Management System CRM
+                        </h4>
+
+                    </div>
+
+                    <span class="text-xs font-mono text-slate-500">
+                        Full-Stack
+                    </span>
+
+                </div>
+
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                    A web-based management system designed to organize students, teachers, classes, attendance, academic records, and administrative workflows through structured role-based access.
+                </p>
+
+                <div class="flex flex-wrap gap-2 text-xs font-mono font-bold">
+
+                    <span class="text-[#3B82F6] bg-[#3B82F6]/10 px-3 py-1 rounded-md">
+                        Django
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        Django REST Framework
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        Vue.js
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        SQLite
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PHARMACY MANAGEMENT SYSTEM -->
+            <article class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-7 hover:border-[#22D3EE]/50 transition-all duration-300 group">
+
+                <div class="flex justify-between items-start gap-4 mb-5">
+
+                    <div>
+
+                        <span class="text-xs font-mono text-[#22D3EE] uppercase tracking-wider">
+                            Healthcare
+                        </span>
+
+                        <h4 class="text-xl font-black text-white mt-2 group-hover:text-[#22D3EE] transition-colors">
+                            Pharmacy Management System
+                        </h4>
+
+                    </div>
+
+                    <span class="text-xs font-mono text-slate-500">
+                        Full-Stack
+                    </span>
+
+                </div>
+
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                    A business management system designed to support pharmacy operations, inventory workflows, product records, and structured data management.
+                </p>
+
+                <div class="flex flex-wrap gap-2 text-xs font-mono font-bold">
+
+                    <span class="text-[#3B82F6] bg-[#3B82F6]/10 px-3 py-1 rounded-md">
+                        Django
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        Django REST Framework
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        Vue.js
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        PostgreSQL
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CANDIDATE TEST PLATFORM -->
+            <article class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-7 hover:border-[#22D3EE]/50 transition-all duration-300 group">
+
+                <div class="flex justify-between items-start gap-4 mb-5">
+
+                    <div>
+
+                        <span class="text-xs font-mono text-[#22D3EE] uppercase tracking-wider">
+                            Recruitment Technology
+                        </span>
+
+                        <h4 class="text-xl font-black text-white mt-2 group-hover:text-[#22D3EE] transition-colors">
+                            Candidate Test Platform
+                        </h4>
+
+                    </div>
+
+                    <span class="text-xs font-mono text-emerald-400">
+                        Live
+                    </span>
+
+                </div>
+
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                    An online assessment platform for conducting candidate tests, managing participants, evaluating submissions, and supporting structured recruitment workflows.
+                </p>
+
+                <div class="flex flex-wrap gap-2 text-xs font-mono font-bold">
+
+                    <span class="text-[#3B82F6] bg-[#3B82F6]/10 px-3 py-1 rounded-md">
+                        Django
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        Vue.js
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        PostgreSQL
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        REST APIs
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- WORKSHOP MANAGEMENT SYSTEM -->
+            <article class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-7 hover:border-[#3B82F6]/50 transition-all duration-300 group">
+
+                <div class="flex justify-between items-start gap-4 mb-5">
+
+                    <div>
+
+                        <span class="text-xs font-mono text-[#22D3EE] uppercase tracking-wider">
+                            Operations
+                        </span>
+
+                        <h4 class="text-xl font-black text-white mt-2 group-hover:text-[#22D3EE] transition-colors">
+                            Workshop Management System
+                        </h4>
+
+                    </div>
+
+                    <span class="text-xs font-mono text-slate-500">
+                        Full-Stack
+                    </span>
+
+                </div>
+
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                    A management platform designed to organize workshop operations, service workflows, records, and operational data through a centralized software system.
+                </p>
+
+                <div class="flex flex-wrap gap-2 text-xs font-mono font-bold">
+
+                    <span class="text-[#3B82F6] bg-[#3B82F6]/10 px-3 py-1 rounded-md">
+                        Django
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        Vue.js
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        PostgreSQL
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        REST APIs
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================================================= -->
+    <!-- CURRENTLY IN DEVELOPMENT -->
+    <!-- ========================================================= -->
+
+    <div class="mb-16">
+
+        <div class="mb-8">
+
+            <div class="text-xs font-mono font-bold tracking-[0.18em] text-[#22D3EE] uppercase mb-2">
+                In Development
+            </div>
+
+            <h3 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
+                Currently Building
+            </h3>
+
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+
+            <!-- HANDY HYVES -->
+            <article class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-7 group">
+
+                <div class="flex justify-between items-start gap-4 mb-5">
+
+                    <div>
+
+                        <span class="text-xs font-mono text-amber-400 uppercase tracking-wider">
+                            Development
+                        </span>
+
+                        <h4 class="text-xl font-black text-white mt-2 group-hover:text-[#22D3EE] transition-colors">
+                            Handy Hyves
+                        </h4>
+
+                    </div>
+
+                    <span class="text-xs font-mono text-amber-400">
+                        In Progress
+                    </span>
+
+                </div>
+
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                    A software product currently under development. Project details and product information will be published as development progresses.
+                </p>
+
+                <div class="flex flex-wrap gap-2 text-xs font-mono font-bold">
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        Web Application
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        In Development
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- UNNAMED PROJECT -->
+            <article class="bg-[#0B1220] border-2 border-[#233554] rounded-[24px] p-7 group">
+
+                <div class="flex justify-between items-start gap-4 mb-5">
+
+                    <div>
+
+                        <span class="text-xs font-mono text-amber-400 uppercase tracking-wider">
+                            Development
+                        </span>
+
+                        <h4 class="text-xl font-black text-white mt-2 group-hover:text-[#22D3EE] transition-colors">
+                            Screen Time & Digital Wellbeing Application
+                        </h4>
+
+                    </div>
+
+                    <span class="text-xs font-mono text-amber-400">
+                        In Progress
+                    </span>
+
+                </div>
+
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                    A mobile application designed to help users understand and manage their daily screen time and app usage through usage tracking, customizable limits, and intelligent intervention.
+                </p>
+
+                <div class="flex flex-wrap gap-2 text-xs font-mono font-bold">
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        Software Product
+                    </span>
+
+                    <span class="text-slate-400 bg-[#112240] px-3 py-1 rounded-md">
+                        In Development
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CTA -->
+    <div class="mt-16 w-full flex justify-center">
+
+        <a
+            href="https://github.com/moazali06"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group relative inline-flex items-center justify-center px-8 py-4 font-mono text-sm font-bold text-[#22D3EE] border border-[#22D3EE] rounded-xl overflow-hidden shadow-[0_0_20px_rgba(34,211,238,0.1)] hover:shadow-[0_0_35px_rgba(34,211,238,0.25)] transition-all duration-300"
+        >
+
+            <span class="absolute inset-0 w-full h-full bg-[#22D3EE]/5 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+
+            <span class="relative flex items-center gap-2">
+
+                View GitHub Projects
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-200"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                </svg>
+
+            </span>
+
+        </a>
+
+    </div>
+
 </section>
 
 <section id="services" class="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-16 pt-24 pb-32">
 
     <div class="w-full max-w-3xl text-center mx-auto mb-20">
         <div class="Servicetext-sm font-bold tracking-[0.2em] text-[#22D3EE] uppercase font-mono mb-4">
-            04. s
+            04. 
         </div>
         <h2 class="text-4xl sm:text-5xl xl:text-6xl font-black text-white tracking-tight leading-tight mb-6">
             What I Build For You

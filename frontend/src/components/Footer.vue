@@ -19,7 +19,7 @@
           </div>
 
           <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
-            Backend & Full-Stack Software Developer specializing in scalable Python architectures, custom Generative AI execution nodes, and modern component-driven interfaces.
+            Software Engineer & Full-Stack Software Developer specializing in scalable Python architectures, custom Generative AI execution nodes, and modern component-driven interfaces.
           </p>
           <div class="flex items-center gap-6 font-mono text-xs font-bold text-slate-400">
             <a :href="githubUrl" target="_blank" class="hover:text-[#22D3EE] transition-colors duration-200">GitHub</a>
