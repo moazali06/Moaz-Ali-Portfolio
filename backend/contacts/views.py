@@ -15,13 +15,6 @@ from .models import ChatbotKnowledge, UnansweredQuery
 import requests
 
 
-
-
-
-
-
-
-
 @csrf_exempt
 @api_view(["POST"])
 def contact_form_submit(request):
